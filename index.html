@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Club by Rodrigo Aguinagalde</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Administración de Club</h1>
+    <form class="formularioClientes">
+        <div id="divSocios">
+            <label>Nombre:</label>
+            <input class="text" id="inputNombreSocio" placeholder="Nombre">
+            <label>Apellido:</label>
+            <input class="text" id="inputApellidoSocio" placeholder="Apellido">
+            <label>Direccion:</label>
+            <input class="text" id="inputDireccionSocio" placeholder="Direccion">
+            <label>Categoría:</label>
+            <select id="inputCategoriaSocio">
+                <option value="Cadete">Cadete</option>
+                <option value="Socio">Socio</option>
+                <option value="Adherente">Adherente</option>
+            </select>
+        </div>
+        <div class="botones">
+            <input type="submit" value="Agregar" class="btn" id="btnAgregar">
+            <input type="submit" value="Listar" class="btn" id="btnListar">
+            <div class="divBuscarSocio">
+                <div class="divBuscar">
+                    <input type="text" placeholder="Buscar por Apellido" id="inputBuscarSocio">
+                    <input type="submit" value="Buscar cliente" class="btn" id="btnBuscar">
+                </div>
+                <input type="submit" value="Pago Cuota" class="btn" id="btnCuotaPagada">
+                <input type="submit" value="Borrar cliente seleccionado" class="btn" id="btnBorrar">
+                <input type="submit" value="Modificar cliente seleccionado" class="btn" id="btnModificar">
+            </div>
+            
+
+        </div>
+
+    <h2>Lista de Socios</h2>
+    <div id="divTablaSocios">
+        <table id="tabla">
+            <tr>
+                <th>Nombre y Apellido</th>
+                <th>Categoría</th>
+                <th>Cuota Pagada</th>
+            </tr>   
+        </table>
+    </div>
+</form>
+
+    <script src="app.js"></script>
+</body>
+</html>
